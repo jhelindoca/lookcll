@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+
+.topo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 68px;
+    height: 68px;
+    border: 1px solid #ff00d9;
+    border-radius: 50%;
+    color: #ff00d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 0, 217, 0.25);
+}
+
+.simbolo {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.logo h1 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.logo p {
+    font-size: 6px;
+    margin-top: 2px;
+}
+
+.titulo {
+    width: 75%;
+    margin: 0 auto 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: #2116a5;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    column-gap: 18px;
+    row-gap: 25px;
+    padding: 0 18px;
+}
+
+.produto {
+    width: 100%;
+    max-width: 155px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #090909;
+    border: 1px solid #242080;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.produto img {
+    display: block;
+    width: 100%;
+    height: 125px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.produto h3 {
+    font-size: 13px;
+    margin: 9px 0;
+    min-height: 15px;
+    font-weight: normal;
+}
+
+.preco {
+    background-color: #260c9b;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 2px;
+    border-radius: 3px;
+}

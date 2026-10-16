@@ -1,0 +1,76 @@
+body {
+    background-color: #010820;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 460px;
+    min-height: 100vh;
+    background-color: #000000;
+    border: 1px solid #4e00a7;
+}
+
+.topo {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #4e00a7;
+    background:
+    linear-gradient(90deg,transparent 49%,)
+     rgba(0, 191, 255, 0.12) 50%,transparent 51%
+        
+}
+.topo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+.seta {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff32f2;
+    border-radius: 50%;
+    color: #ff32f2;
+    font-size: 25px;
+    box-shadow: 0 0 7px #ff32f2;
+}
+.botao:hover {
+    background-color: rgba(255, 50, 242, 0.12);
+}
+.botao:hover .icone {
+    box-shadow:
+        0 0 15px #ff32f2,
+        inset 0 0 12px #a600ff;
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 20px 0;
+    }
+
+    .container {
+        min-height: auto;
+    }
+}
